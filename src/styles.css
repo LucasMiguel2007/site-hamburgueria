@@ -391,17 +391,6 @@ article p {
 
     transition: .35s;
 }
-
-.item-cardapio::before {
-    content: "🍔";
-
-    position: absolute;
-    top: 15px;
-    right: 18px;
-
-    font-size: 25px;
-}
-
 .item-cardapio:hover {
     transform: translateY(-8px);
 
