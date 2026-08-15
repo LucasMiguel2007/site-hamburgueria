@@ -212,6 +212,16 @@ nav img {
         transform: translateY(-12px) rotate(1deg);
     }
 }
+@keyframes burgerFloatMobile {
+
+    0%, 100% {
+        transform: translateX(50%) translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(50%) translateY(-8px) rotate(1deg);
+    }
+}
 
 
 /* ================= BUTTONS ================= */
@@ -929,15 +939,17 @@ body::before {
         padding: 13px 20px;
     }
 
-    nav img {
-        width: 90vw;
-        max-width: 420px;
+   nav img {
+    width: 82vw;
+    max-width: 400px;
 
-        right: 50%;
-        bottom: 5px;
+    right: 50%;
+    bottom: -5px;
 
-        transform: translateX(50%);
-    }
+    transform: translateX(50%);
+
+    animation: burgerFloatMobile 4s ease-in-out infinite;
+}
 
 
     /* SEÇÕES */
