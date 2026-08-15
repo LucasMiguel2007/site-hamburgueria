@@ -464,7 +464,7 @@ article h2::after {
             rgba(255, 193, 7, 0.12),
             transparent 35%
         ),
-        #fff8ed;
+        #fdcb36;
 
     text-align: center;
 }
@@ -796,9 +796,8 @@ article h2::after {
 #contato {
     background:
         linear-gradient(
-            135deg,
-            #fff8ed,
-            #ffffff
+           
+            #eadfd7
         );
 
     text-align: center;
@@ -917,7 +916,7 @@ article h2::after {
 
     background: #24140e;
 
-    color: #ffc107;
+    color: #ffc002;
 
     border: none;
 
