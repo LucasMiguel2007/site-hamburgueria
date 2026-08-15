@@ -940,18 +940,17 @@ body::before {
     }
 
   
-    nav img {
-        width: 82vw;
-        max-width: 400px;
+   nav img {
+    width: 72vw;
+    max-width: 350px;
 
-        right: 50%;
-        bottom: -90px;
+    right: 50%;
+    bottom: 10px;
 
-        transform: translateX(50%);
+    transform: translateX(50%);
 
-        animation: burgerFloatMobile 4s ease-in-out infinite;
-    }
-
+    animation: burgerFloatMobile 4s ease-in-out infinite;
+}
 
     /* SEÇÕES */
 
