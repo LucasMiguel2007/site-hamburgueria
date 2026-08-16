@@ -4,237 +4,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Brasa Burger | Hambúrguer Artesanal</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <a href="#cardapio">Cardápio</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+
+        <nav aria-label="Navegação principal">
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
     </header>
 
-    <nav>
 
-        <h1>
-            O sabor que merece estar no seu próximo pedido.
-        </h1>
+    <main>
 
-        <p>
-            Hambúrgueres artesanais preparados na hora,
-            com carne suculenta, ingredientes frescos e
-            combinações feitas para você.
-        </p>
+        <!-- Seção principal -->
+        <section class="hero">
 
-        <a href="#cardapio">
-            <button>Ver Cardápio</button>
-        </a>
+            <h1>
+                O sabor que merece estar no seu próximo pedido.
+            </h1>
 
-        <a href="#contato">
-            <button>Fazer Pedido</button>
-        </a>
-
-        <img
-            src="image-removebg-preview (14).png"
-            alt="Hambúrguer artesanal da Brasa Burger"
-            width="500"
-        >
-
-    </nav>
-
-    <article id="cardapio">
-
-        <h2>CARDÁPIO</h2>
-
-        <h3>Hambúrgueres</h3>
-
-        <div class="item-cardapio">
-            <h4>Brasa Classic</h4>
             <p>
-                Pão brioche, carne artesanal 160g,
-                queijo cheddar, alface, tomate e molho especial.
+                Hambúrgueres artesanais preparados na hora,
+                com carne suculenta, ingredientes frescos e
+                combinações feitas para você.
             </p>
-        </div>
 
-        <div class="item-cardapio">
-            <h4>Bacon Supreme</h4>
-            <p>
-                Pão brioche, carne artesanal 160g,
-                cheddar, bacon crocante e molho barbecue.
-            </p>
-        </div>
+            <a href="#cardapio" class="botao">
+                Ver Cardápio
+            </a>
 
-        <div class="item-cardapio">
-            <h4>Duplo Brasa</h4>
-            <p>
-                Frango empanado crocante, queijo,
-                alface, tomate e maionese da casa.
-            </p>
-        </div>
+            <a href="#contato" class="botao">
+                Fazer Pedido
+            </a>
 
-        <h3>Acompanhamentos</h3>
+            <img
+                src="image-removebg-preview (14).png"
+                alt="Hambúrguer artesanal da Brasa Burger"
+                width="500"
+            >
 
-        <div class="item-cardapio">
-            <h4>Batata Frita</h4>
-            <p>
-                Porção de batatas crocantes
-                acompanhada de molho especial.
-            </p>
-        </div>
+        </section>
 
-        <div class="item-cardapio">
-            <h4>Batata com Cheddar e Bacon</h4>
-            <p>
-                Batatas crocantes, cheddar cremoso
-                e bacon crocante.
-            </p>
-        </div>
 
-        <h3>Bebidas</h3>
+        <!-- Cardápio -->
+        <section id="cardapio">
 
-        <div class="item-cardapio">
-            <h4>Refrigerante</h4>
-            <p>
-                Lata 350ml.
-            </p>
-        </div>
+            <h2>CARDÁPIO</h2>
 
-        <div class="item-cardapio">
-            <h4>Suco Natural</h4>
-            <p>
-                Sabores disponíveis conforme o dia.
-            </p>
-        </div>
 
-        <div class="item-cardapio">
-            <h4>Água Mineral</h4>
-            <p>
-                Com ou sem gás.
-            </p>
-        </div>
+            <section>
 
-        <img
-            src="menuimagem.png"
-            alt="Cardápio da Brasa Burger"
-            width="500"
-        >
+                <h3>Hambúrgueres</h3>
 
-    </article>
+                <div class="lista-cardapio">
 
-<article id="sobre">
+                    <article class="item-cardapio">
 
-    <div class="sobre-conteudo">
+                        <h4>Brasa Classic</h4>
 
-        <h2>SOBRE</h2>
+                        <p>
+                            Pão brioche, carne artesanal 160g,
+                            queijo cheddar, alface, tomate e molho especial.
+                        </p>
 
-        <h3>
-            Mais que um hambúrguer. Uma experiência.
-        </h3>
+                    </article>
 
-        <p>
-            Na <strong>Brasa Burger</strong>, cada pedido é
-            preparado na hora para garantir sabor, qualidade
-            e aquele hambúrguer feito do jeito que você gosta.
-        </p>
 
-        <h3 class="titulo-diferenciais">
-            Nossos diferenciais
-        </h3>
+                    <article class="item-cardapio">
 
-        <div class="diferenciais">
+                        <h4>Bacon Supreme</h4>
 
-            <div class="item-sobre">
-                <h4>Carne artesanal</h4>
+                        <p>
+                            Pão brioche, carne artesanal 160g,
+                            cheddar, bacon crocante e molho barbecue.
+                        </p>
+
+                    </article>
+
+
+                    <article class="item-cardapio">
+
+                        <h4>Duplo Brasa</h4>
+
+                        <p>
+                            Frango empanado crocante, queijo,
+                            alface, tomate e maionese da casa.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h3>Acompanhamentos</h3>
+
+                <div class="lista-cardapio">
+
+                    <article class="item-cardapio">
+
+                        <h4>Batata Frita</h4>
+
+                        <p>
+                            Porção de batatas crocantes
+                            acompanhada de molho especial.
+                        </p>
+
+                    </article>
+
+
+                    <article class="item-cardapio">
+
+                        <h4>Batata com Cheddar e Bacon</h4>
+
+                        <p>
+                            Batatas crocantes, cheddar cremoso
+                            e bacon crocante.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h3>Bebidas</h3>
+
+                <div class="lista-cardapio">
+
+                    <article class="item-cardapio">
+
+                        <h4>Refrigerante</h4>
+
+                        <p>
+                            Lata 350ml.
+                        </p>
+
+                    </article>
+
+
+                    <article class="item-cardapio">
+
+                        <h4>Suco Natural</h4>
+
+                        <p>
+                            Sabores disponíveis conforme o dia.
+                        </p>
+
+                    </article>
+
+
+                    <article class="item-cardapio">
+
+                        <h4>Água Mineral</h4>
+
+                        <p>
+                            Com ou sem gás.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <img
+                src="menuimagem.png"
+                alt="Cardápio da Brasa Burger"
+                width="500"
+            >
+
+        </section>
+
+
+        <!-- Sobre -->
+        <section id="sobre">
+
+            <div class="sobre-conteudo">
+
+                <h2>SOBRE</h2>
+
+                <h3>
+                    Mais que um hambúrguer. Uma experiência.
+                </h3>
+
                 <p>
-                    Blend preparado para garantir sabor e suculência.
+                    Na <strong>Brasa Burger</strong>, cada pedido é
+                    preparado na hora para garantir sabor, qualidade
+                    e aquele hambúrguer feito do jeito que você gosta.
                 </p>
+
+
+                <h3 class="titulo-diferenciais">
+                    Nossos diferenciais
+                </h3>
+
+
+                <ul class="diferenciais">
+
+                    <li class="item-sobre">
+
+                        <h4>Carne artesanal</h4>
+
+                        <p>
+                            Blend preparado para garantir sabor e suculência.
+                        </p>
+
+                    </li>
+
+
+                    <li class="item-sobre">
+
+                        <h4>Ingredientes frescos</h4>
+
+                        <p>
+                            Selecionamos ingredientes de qualidade para cada pedido.
+                        </p>
+
+                    </li>
+
+
+                    <li class="item-sobre">
+
+                        <h4>Preparado na hora</h4>
+
+                        <p>
+                            Seu hambúrguer é montado e preparado somente após o pedido.
+                        </p>
+
+                    </li>
+
+
+                    <li class="item-sobre">
+
+                        <h4>Pedido rápido</h4>
+
+                        <p>
+                            Agilidade desde o pedido até a entrega.
+                        </p>
+
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="item-sobre">
-                <h4>Ingredientes frescos</h4>
+
+            <img
+                src="hamburguer2.png"
+                alt="Hambúrguer artesanal da Brasa Burger"
+            >
+
+        </section>
+
+
+        <!-- Contato -->
+        <section id="contato">
+
+            <h2>CONTATO</h2>
+
+            <h3>Bateu a fome?</h3>
+
+            <p>
+                Faça seu pedido e receba seu hambúrguer favorito em casa.
+            </p>
+
+
+            <address>
+
+                <h3>WhatsApp</h3>
+
                 <p>
-                    Selecionamos ingredientes de qualidade para cada pedido.
+                    <a href="tel:+5537999999999">
+                        (37) 99999-9999
+                    </a>
                 </p>
-            </div>
 
-            <div class="item-sobre">
-                <h4>Preparado na hora</h4>
+
+                <h3>Horário de funcionamento</h3>
+
                 <p>
-                    Seu hambúrguer é montado e preparado somente após o pedido.
-                </p>
-            </div>
+                    <span>Terça a quinta:</span>
+                    <time datetime="18:00">18h</time> às
+                    <time datetime="23:00">23h</time>
+                    <br>
 
-            <div class="item-sobre">
-                <h4>Pedido rápido</h4>
+                    <span>Sexta e sábado:</span>
+                    <time datetime="18:00">18h</time> às
+                    <time datetime="00:00">00h</time>
+                    <br>
+
+                    <span>Domingo:</span>
+                    <time datetime="18:00">18h</time> às
+                    <time datetime="23:00">23h</time>
+                </p>
+
+
+                <h3>Instagram</h3>
+
                 <p>
-                    Agilidade desde o pedido até a entrega.
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        @brasaburger
+                    </a>
                 </p>
-            </div>
 
-        </div>
+            </address>
 
-    </div>
 
-    <img
-        src="hamburguer2.png"
-        alt="Hambúrguer artesanal da Brasa Burger"
-    >
+            <a href="" target="_blank" rel="noopener noreferrer" class="botao">
+                Instagram
+            </a>
 
-</article>
+            <a href="" target="_blank" rel="noopener noreferrer" class="botao">
+                Pedir pelo WhatsApp
+            </a>
 
-    <article id="contato">
 
-        <h2>CONTATO</h2>
+            <h3>
+                Seu próximo hambúrguer começa aqui.
+            </h3>
 
-        <h3>Bateu a fome?</h3>
+        </section>
 
-        <p>
-            Faça seu pedido e receba seu hambúrguer favorito em casa.
-        </p>
+    </main>
 
-        <h3>WhatsApp</h3>
-
-        <p>
-            (37) 99999-9999
-        </p>
-
-        <h3>Horário de funcionamento</h3>
-
-        <p>
-            Terça a quinta: 18h às 23h <br>
-            Sexta e sábado: 18h às 00h <br>
-            Domingo: 18h às 23h
-        </p>
-
-        <h3>Instagram</h3>
-
-        <p>
-            @brasaburger
-        </p>
-
-        <a href="" target="_blank">
-            <button>Instagram</button>
-        </a>
-
-        <a href="" target="_blank">
-            <button>Pedir pelo WhatsApp</button>
-        </a>
-
-        <h3>
-            Seu próximo hambúrguer começa aqui.
-        </h3>
-
-    </article>
 
     <footer>
 
-        <h6>
+        <p>
             Site desenvolvido por
             <strong>Lucas Miguel</strong>,
             Desenvolvedor Full Stack e profissional em automação em Python.
-        </h6>
+        </p>
 
     </footer>
 

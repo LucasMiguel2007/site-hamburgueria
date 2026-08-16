@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap');
 
+
 :root {
     --red: #c9141d;
     --red-dark: #970d14;
@@ -11,12 +12,14 @@
     --gray: #6f6259;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -44,6 +47,7 @@ header {
     z-index: 100;
 }
 
+
 header::before {
     content: "🍔 BRASA BURGER";
 
@@ -57,6 +61,7 @@ header::before {
     letter-spacing: 1px;
 }
 
+
 header a {
     color: var(--red-dark);
 
@@ -68,6 +73,7 @@ header a {
     transition: .3s;
 }
 
+
 header a:hover {
     color: var(--red);
 }
@@ -75,7 +81,7 @@ header a:hover {
 
 /* ================= HERO ================= */
 
-nav {
+.hero {
     position: relative;
     min-height: 720px;
 
@@ -101,10 +107,12 @@ nav {
     overflow: hidden;
 }
 
-nav::before {
+
+.hero::before {
     content: "";
 
     position: absolute;
+
     width: 650px;
     height: 650px;
 
@@ -121,10 +129,12 @@ nav::before {
         );
 }
 
-nav::after {
+
+.hero::after {
     content: "✦";
 
     position: absolute;
+
     right: 12%;
     top: 220px;
 
@@ -137,7 +147,7 @@ nav::after {
 
 /* ================= HERO TEXT ================= */
 
-nav h1 {
+.hero h1 {
     position: relative;
     z-index: 5;
 
@@ -146,12 +156,15 @@ nav h1 {
 
     font-family: 'Anton', sans-serif;
     font-size: clamp(48px, 6vw, 82px);
+
     line-height: .98;
+
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-nav h1::before {
+
+.hero h1::before {
     content: "HAMBÚRGUER ARTESANAL";
 
     display: block;
@@ -161,12 +174,15 @@ nav h1::before {
     color: var(--yellow);
 
     font-family: 'Poppins', sans-serif;
+
     font-size: 13px;
     font-weight: 800;
+
     letter-spacing: 2px;
 }
 
-nav p {
+
+.hero p {
     position: relative;
     z-index: 5;
 
@@ -184,7 +200,7 @@ nav p {
 
 /* ================= HERO BURGER ================= */
 
-nav img {
+.hero img {
     position: absolute;
     z-index: 4;
 
@@ -202,6 +218,7 @@ nav img {
     animation: burgerFloat 4s ease-in-out infinite;
 }
 
+
 @keyframes burgerFloat {
 
     0%, 100% {
@@ -212,6 +229,8 @@ nav img {
         transform: translateY(-12px) rotate(1deg);
     }
 }
+
+
 @keyframes burgerFloatMobile {
 
     0%, 100% {
@@ -223,34 +242,31 @@ nav img {
     }
 }
 
-/* ================= BUTTONS ================= */
 
-nav > a,
+/* ================= BUTTONS / LINKS ================= */
+
+.hero > a,
 #contato > a {
     position: relative;
     z-index: 10;
 
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     width: fit-content;
     min-width: 155px;
 
     margin-top: 10px;
 
-    text-decoration: none;
-}
-
-nav button,
-#contato button {
-    width: 100%;
-
     padding: 14px 25px;
 
-    border: 0;
     border-radius: 30px;
 
     background: var(--yellow);
     color: var(--black);
+
+    text-decoration: none;
 
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
@@ -264,9 +280,12 @@ nav button,
     transition: .3s;
 }
 
-nav button:hover,
-#contato button:hover {
+
+.hero > a:hover,
+#contato > a:hover {
     background: #ffd04d;
+
+    color: var(--black);
 
     transform: translateY(-3px) scale(1.02);
 
@@ -274,7 +293,10 @@ nav button:hover,
         0 12px 30px rgba(0,0,0,.3);
 }
 
-nav > a:nth-of-type(2) button {
+
+/* Segundo botão do HERO */
+
+.hero > a:nth-of-type(2) {
     background: transparent;
     color: white;
 
@@ -283,12 +305,14 @@ nav > a:nth-of-type(2) button {
     margin-top: 5px;
 }
 
-nav > a:nth-of-type(2) button:hover {
+
+.hero > a:nth-of-type(2):hover {
     background: white;
     color: var(--red);
 }
 
-/* REMOVE APENAS O CONTORNO AZUL DE FOCO */
+
+/* ================= FOCO ================= */
 
 button:focus,
 button:focus-visible,
@@ -296,34 +320,42 @@ a:focus,
 a:focus-visible {
     outline: none;
 }
+
+
 /* ================= SEÇÕES ================= */
 
-article {
+main > section {
     padding: 100px 8%;
 }
 
-article h2 {
+
+main > section h2 {
     margin-bottom: 10px;
 
     color: var(--red);
 
     font-family: 'Anton', sans-serif;
     font-size: 48px;
+
     letter-spacing: 1px;
 }
 
-article h3 {
+
+main > section h3 {
     margin: 15px 0;
 
     font-size: 27px;
 }
 
-article h4 {
+
+main > section h4 {
     font-size: 17px;
 }
 
-article p {
+
+main > section p {
     color: var(--gray);
+
     font-size: 14px;
     line-height: 1.7;
 }
@@ -343,10 +375,12 @@ article p {
         var(--yellow);
 }
 
+
 #cardapio::before {
     content: "MENU";
 
     position: absolute;
+
     right: 5%;
     top: 40px;
 
@@ -358,17 +392,35 @@ article p {
     pointer-events: none;
 }
 
-#cardapio h2,
-#cardapio > h3 {
+
+#cardapio > h2 {
     text-align: center;
 }
 
-#cardapio > h3 {
+
+/* Cada categoria do cardápio */
+
+#cardapio > section > h3 {
     margin: 35px 0 25px;
 
     color: var(--red);
 
     font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* ================= LISTA DE CARDS ================= */
+
+.lista-cardapio {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
 }
 
 
@@ -377,14 +429,9 @@ article p {
 .item-cardapio {
     position: relative;
 
-    display: inline-block;
-    vertical-align: top;
-
-    width: calc(33.333% - 25px);
+    width: calc(33.333% - 15px);
 
     min-height: 150px;
-
-    margin: 10px;
 
     padding: 25px;
 
@@ -398,7 +445,11 @@ article p {
     border: 1px solid rgba(201,20,29,.06);
 
     transition: .35s;
+
+    list-style: none;
 }
+
+
 .item-cardapio:hover {
     transform: translateY(-8px);
 
@@ -408,6 +459,7 @@ article p {
     border-color: rgba(201,20,29,.2);
 }
 
+
 .item-cardapio h4 {
     margin-bottom: 10px;
 
@@ -415,6 +467,7 @@ article p {
 
     font-size: 18px;
 }
+
 
 .item-cardapio p {
     font-size: 13px;
@@ -440,6 +493,7 @@ article p {
     transition: .4s;
 }
 
+
 #cardapio > img:hover {
     transform: translateY(-8px);
 }
@@ -451,6 +505,7 @@ article p {
     position: relative;
 
     display: grid;
+
     grid-template-columns: 1.1fr .9fr;
 
     gap: 45px;
@@ -462,13 +517,39 @@ article p {
     color: white;
 }
 
-#sobre > h2,
-#sobre > h3,
-#sobre > p {
+
+/* Conteúdo da esquerda */
+
+.sobre-conteudo {
     grid-column: 1;
 }
 
-#sobre > h3:nth-of-type(2) {
+
+#sobre h2 {
+    color: var(--yellow);
+
+    margin-bottom: 0;
+}
+
+
+#sobre h3 {
+    font-size: 32px;
+}
+
+
+#sobre p {
+    color: rgba(255,255,255,.8);
+}
+
+
+#sobre strong {
+    color: var(--yellow);
+}
+
+
+/* Título dos diferenciais */
+
+.titulo-diferenciais {
     text-align: center;
 
     margin-top: 15px;
@@ -477,58 +558,34 @@ article p {
     color: white;
 }
 
-#sobre h2 {
-    grid-column: 1;
-
-    margin-bottom: 0;
-}
-
-#sobre > h3 {
-    grid-column: 1;
-
-    margin: 5px 0;
-}
-
-#sobre > p {
-    grid-column: 1;
-
-    max-width: 600px;
-
-    margin-bottom: 15px;
-}
-
-#sobre > h3:nth-of-type(2) {
-    margin-top: 15px;
-}
-
-#sobre h2 {
-    color: var(--yellow);
-}
-
-#sobre h3 {
-    font-size: 32px;
-}
-
-#sobre p {
-    color: rgba(255,255,255,.8);
-}
-
-#sobre strong {
-    color: var(--yellow);
-}
-
 
 /* ================= DIFERENCIAIS ================= */
 
+.diferenciais {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+}
+
+
 .item-sobre {
-    display: inline-flex;
+    display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 
-    width: calc(50% - 6px);
-    min-height: 105px;
+    width: calc(50% - 3px);
 
-    margin: 3px;
+    min-height: 105px;
 
     padding: 14px 16px;
 
@@ -543,21 +600,6 @@ article p {
     transition: .3s;
 }
 
-#sobre > .item-sobre:nth-of-type(1) {
-    margin-left: 0;
-}
-
-#sobre > .item-sobre:nth-of-type(2) {
-    margin-right: 0;
-}
-
-#sobre > .item-sobre:nth-of-type(3) {
-    margin-left: 0;
-}
-
-#sobre > .item-sobre:nth-of-type(4) {
-    margin-right: 0;
-}
 
 .item-sobre:hover {
     transform: translateY(-4px);
@@ -567,6 +609,7 @@ article p {
     border-color: rgba(255,189,22,.4);
 }
 
+
 .item-sobre h4 {
     margin-bottom: 4px;
 
@@ -575,13 +618,22 @@ article p {
     font-size: 15px;
 }
 
+
 .item-sobre p {
     font-size: 11px;
     line-height: 1.5;
 }
 
+
+/* Imagem do Sobre */
+
 #sobre > img {
+    grid-column: 2;
+
+    grid-row: 1;
+
     width: min(500px, 100%);
+
     max-width: 100%;
     height: auto;
 
@@ -592,6 +644,7 @@ article p {
 
     transition: .4s;
 }
+
 
 #sobre > img:hover {
     transform: scale(1.03) rotate(1deg);
@@ -613,17 +666,44 @@ article p {
         );
 }
 
+
 #contato h2 {
     font-size: 55px;
 }
+
 
 #contato h3 {
     margin-top: 30px;
 }
 
+
 #contato p {
     margin: 5px 0 15px;
 }
+
+
+/* Contato */
+
+#contato address {
+    font-style: normal;
+}
+
+
+#contato address a {
+    color: var(--red);
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+#contato address a:hover {
+    text-decoration: underline;
+}
+
+
+/* Botões do contato */
 
 #contato > a {
     display: inline-flex;
@@ -631,13 +711,18 @@ article p {
     margin: 15px 5px;
 }
 
-#contato > a:nth-of-type(2) button {
+
+#contato > a:nth-of-type(2) {
     background: var(--red);
+
     color: white;
 }
 
-#contato > a:nth-of-type(2) button:hover {
+
+#contato > a:nth-of-type(2):hover {
     background: var(--red-dark);
+
+    color: white;
 }
 
 
@@ -649,13 +734,17 @@ footer {
     text-align: center;
 
     background: var(--black);
+
     color: rgba(255,255,255,.5);
 }
 
-footer h6 {
+
+footer p {
     font-size: 11px;
+
     font-weight: 400;
 }
+
 
 footer strong {
     color: var(--yellow);
@@ -668,6 +757,7 @@ body::before {
     content: "✦  ✦  ✦";
 
     position: fixed;
+
     z-index: -1;
 
     right: -20px;
@@ -689,45 +779,58 @@ body::before {
 
     header {
         gap: 25px;
+
         padding: 20px 25px;
     }
 
+
     header::before {
         left: 25px;
+
         font-size: 18px;
     }
 
-    nav {
+
+    .hero {
         padding-left: 7%;
         padding-right: 7%;
     }
 
-    nav h1 {
+
+    .hero h1 {
         width: 50%;
+
         font-size: clamp(45px, 6vw, 70px);
     }
 
-    nav p {
+
+    .hero p {
         width: 45%;
     }
 
-    nav img {
+
+    .hero img {
         width: min(520px, 47vw);
+
         right: 2%;
     }
 
-    article {
+
+    main > section {
         padding-left: 6%;
         padding-right: 6%;
     }
 
+
     .item-cardapio {
-        width: calc(50% - 25px);
+        width: calc(50% - 10px);
     }
+
 
     #sobre {
         gap: 30px;
     }
+
 
     #sobre > img {
         width: min(450px, 100%);
@@ -743,15 +846,19 @@ body::before {
 
     header {
         width: 100%;
+
         gap: 20px;
 
         padding: 18px 20px;
     }
 
+
     header::before {
         font-size: 14px;
+
         left: 20px;
     }
+
 
     header a {
         font-size: 13px;
@@ -760,7 +867,7 @@ body::before {
 
     /* HERO */
 
-    nav {
+    .hero {
         min-height: 850px;
 
         padding: 120px 7% 60px;
@@ -770,26 +877,32 @@ body::before {
         text-align: center;
     }
 
-    nav h1,
-    nav p {
+
+    .hero h1,
+    .hero p {
         width: 100%;
     }
 
-    nav h1 {
+
+    .hero h1 {
         max-width: 700px;
+
         font-size: 55px;
     }
 
-    nav p {
+
+    .hero p {
         max-width: 600px;
     }
 
-    nav > a {
+
+    .hero > a {
         margin-left: auto;
         margin-right: auto;
     }
 
-    nav img {
+
+    .hero img {
         width: min(500px, 75vw);
 
         right: 50%;
@@ -802,7 +915,7 @@ body::before {
     /* CARDÁPIO */
 
     .item-cardapio {
-        width: calc(50% - 25px);
+        width: calc(50% - 10px);
     }
 
 
@@ -816,22 +929,19 @@ body::before {
         gap: 30px;
     }
 
-    #sobre > h2,
-    #sobre > h3,
-    #sobre > p {
+
+    .sobre-conteudo {
         grid-column: 1;
     }
 
-    #sobre > p {
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     #sobre > img {
         grid-column: 1;
+        grid-row: 2;
 
         margin: 10px auto 0;
     }
+
 
     .item-sobre {
         text-align: left;
@@ -862,14 +972,18 @@ body::before {
         background: var(--red-dark);
     }
 
+
     header::before {
         display: none;
     }
 
+
     header a {
         color: white;
+
         font-size: 10px;
     }
+
 
     header a:hover {
         color: var(--yellow);
@@ -878,7 +992,7 @@ body::before {
 
     /* HERO */
 
-    nav {
+    .hero {
         min-height: 760px;
 
         padding: 75px 6% 30px;
@@ -886,7 +1000,8 @@ body::before {
         justify-content: flex-start;
     }
 
-    nav::before {
+
+    .hero::before {
         width: 450px;
         height: 450px;
 
@@ -894,14 +1009,16 @@ body::before {
         top: 180px;
     }
 
-    nav::after {
+
+    .hero::after {
         right: 8%;
         top: 180px;
 
         font-size: 35px;
     }
 
-    nav h1 {
+
+    .hero h1 {
         width: 100%;
 
         font-size: clamp(40px, 12vw, 52px);
@@ -909,13 +1026,17 @@ body::before {
         line-height: 1;
     }
 
-    nav h1::before {
+
+    .hero h1::before {
         font-size: 10px;
+
         letter-spacing: 1.5px;
+
         margin-bottom: 12px;
     }
 
-    nav p {
+
+    .hero p {
         width: 100%;
 
         margin: 20px 0;
@@ -925,47 +1046,50 @@ body::before {
         line-height: 1.7;
     }
 
-    nav > a {
+
+    .hero > a {
         width: 100%;
         max-width: 300px;
 
         margin: 7px auto;
     }
 
-    nav button {
-        padding: 13px 20px;
+
+    .hero img {
+        width: 72vw;
+
+        max-width: 350px;
+
+        right: 50%;
+        bottom: 10px;
+
+        transform: translateX(50%);
+
+        animation: burgerFloatMobile 4s ease-in-out infinite;
     }
 
-  
-   nav img {
-    width: 72vw;
-    max-width: 350px;
-
-    right: 50%;
-    bottom: 10px;
-
-    transform: translateX(50%);
-
-    animation: burgerFloatMobile 4s ease-in-out infinite;
-}
 
     /* SEÇÕES */
 
-    article {
+    main > section {
         padding: 70px 6%;
     }
 
-    article h2,
+
+    main > section h2,
     #contato h2 {
         font-size: 42px;
+
         line-height: 1.05;
     }
 
-    article h3 {
+
+    main > section h3 {
         font-size: 24px;
     }
 
-    article p {
+
+    main > section p {
         font-size: 13px;
     }
 
@@ -974,12 +1098,20 @@ body::before {
 
     #cardapio::before {
         font-size: 90px;
+
         top: 30px;
     }
 
-    #cardapio > h3 {
+
+    #cardapio > section > h3 {
         font-size: 19px;
     }
+
+
+    .lista-cardapio {
+        display: block;
+    }
+
 
     .item-cardapio {
         display: block;
@@ -990,6 +1122,7 @@ body::before {
 
         padding: 22px;
     }
+
 
     #cardapio > img {
         width: 100%;
@@ -1012,15 +1145,23 @@ body::before {
         gap: 20px;
     }
 
+
     #sobre h3 {
         font-size: 27px;
     }
+
 
     #sobre > p {
         width: 100%;
 
         margin-bottom: 10px;
     }
+
+
+    .diferenciais {
+        display: block;
+    }
+
 
     .item-sobre {
         display: block;
@@ -1034,13 +1175,16 @@ body::before {
         padding: 16px;
     }
 
+
     .item-sobre h4 {
         font-size: 15px;
     }
 
+
     .item-sobre p {
         font-size: 11px;
     }
+
 
     #sobre > img {
         width: 100%;
@@ -1055,9 +1199,11 @@ body::before {
         padding: 70px 6%;
     }
 
+
     #contato h3 {
         font-size: 22px;
     }
+
 
     #contato > a {
         display: flex;
@@ -1067,10 +1213,6 @@ body::before {
         margin: 8px 0;
     }
 
-    #contato button {
-        width: 100%;
-    }
-
 
     /* FOOTER */
 
@@ -1078,8 +1220,10 @@ body::before {
         padding: 25px 15px;
     }
 
-    footer h6 {
+
+    footer p {
         font-size: 10px;
+
         line-height: 1.6;
     }
 }
@@ -1093,54 +1237,65 @@ body::before {
 
     header {
         gap: 12px;
+
         padding: 14px 8px;
     }
+
 
     header a {
         font-size: 9px;
     }
 
-    nav {
+
+    .hero {
         min-height: 720px;
 
         padding: 65px 5% 25px;
     }
 
-    nav h1 {
+
+    .hero h1 {
         font-size: 38px;
     }
 
-    nav p {
+
+    .hero p {
         font-size: 12px;
     }
 
-    nav img {
+
+    .hero img {
         width: 94vw;
     }
 
-    article {
+
+    main > section {
         padding: 60px 5%;
     }
 
-    article h2,
+
+    main > section h2,
     #contato h2 {
         font-size: 36px;
     }
 
-    article h3 {
+
+    main > section h3 {
         font-size: 21px;
     }
+
 
     #cardapio::before {
         font-size: 70px;
     }
 
+
     .item-cardapio {
         padding: 20px;
     }
+
 
     #sobre h3 {
         font-size: 24px;
     }
 }
-
