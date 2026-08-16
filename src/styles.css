@@ -223,7 +223,6 @@ nav img {
     }
 }
 
-
 /* ================= BUTTONS ================= */
 
 nav > a,
@@ -237,6 +236,8 @@ nav > a,
     min-width: 155px;
 
     margin-top: 10px;
+
+    text-decoration: none;
 }
 
 nav button,
@@ -287,7 +288,14 @@ nav > a:nth-of-type(2) button:hover {
     color: var(--red);
 }
 
+/* REMOVE APENAS O CONTORNO AZUL DE FOCO */
 
+button:focus,
+button:focus-visible,
+a:focus,
+a:focus-visible {
+    outline: none;
+}
 /* ================= SEÇÕES ================= */
 
 article {
@@ -1135,3 +1143,4 @@ body::before {
         font-size: 24px;
     }
 }
+
